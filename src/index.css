@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+
+.ampilfy-input {
+    display: none;
+    visibility: hidden;
+}
+
+.ampilfy-label {
+    display: none;
+    visibility: hidden;
+}
+
+.ampilfy-input[name=password] {
+    display: inline;
+    visibility: visible;
+}

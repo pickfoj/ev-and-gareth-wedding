@@ -1,0 +1,85 @@
+:root {
+    --colour-black: #090A0F;
+    --colour-white: #fff;
+    --colour-pink: #F6A99D;
+    --colour-green: #A3B899;
+    --colour-blue: #94A3C4;
+    --ff-cursive: "Allura", cursive;
+    --ff: "Cormorant Garamond", serif;
+    --h1: 6em var(--ff-cursive);
+    --h1-mobile: 4em var(--ff-cursive);
+    --h2: 3em var(--ff);
+    --p-cursive: 3em var(--ff-cursive);
+    --p-cursive-mobile: 2em var(--ff-cursive);
+    --p: 1.5em var(--ff);
+    --p-mobile: 1.5em var(--ff);
+    --timeline-width: 50em;
+    --max-width: 1400px
+}
+
+.amplify-input {
+    display: none;
+    visibility: hidden;
+}
+
+.amplify-label {
+    display: none;
+    visibility: hidden;
+}
+
+.amplify-input[name=password] {
+    display: inline;
+    visibility: visible;
+}
+
+[data-amplify-authenticator] {
+    --amplify-components-authenticator-router-background-color: transparent;
+    --amplify-components-authenticator-router-border-color: black;
+    --amplify-components-authenticator-router-border-width: 2px;
+    --amplify-components-button-primary-background-color: transparent;
+    --amplify-components-button-primary-border-color: var(--colour-black);
+    --amplify-components-button-primary-color: var(--colour-black);
+    height: 100vh;
+    background-color: #A3B899;
+}
+
+h1 {
+    font: var(--h1-mobile);
+    font-weight: lighter;
+}
+
+h2 {
+    font: var(--h2);
+}
+
+p {
+    font: var(--p-mobile);
+    font-weight: lighter;
+}
+
+@container (min-width: 1400px) {
+    h1 {
+        font: var(--h1);
+    }
+
+    p {
+        font: var(--p);
+    }
+
+    .password-entry input {
+        font: var(--p);
+    }
+
+    .password-entry button {
+        font: var(--p);
+    }
+
+    .column {
+        flex: 1;
+    }
+
+    .polaroid img {
+        width: 30rem;
+        height: 30rem;
+    }
+}
