@@ -1,6 +1,6 @@
 import './Home.css';
 
-import backgroundImage from '../img/Penrith-UK.jpg.webp'
+import backgroundImage from '../img/Penrith-UK.jpg'
 import Invitation from '../component/Invitation';
 import { Typography } from "@mui/material";
 import HeaderImage from '../component/HeaderImage';
