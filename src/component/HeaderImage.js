@@ -1,12 +1,41 @@
 import { Box, Stack, Typography } from "@mui/material";
 
-export default function HeaderImage({ header, image, height, children }) {
+export default function HeaderImage({ header, preTitle, image, height, children }) {
+
+    const NormalText = ({ children }) => (
+        <Typography
+            component="p"
+            sx={{
+                font: "var(--p)",
+                fontSize: { xs: '1.4rem', md: '2rem' },
+                color: "#fffcf6"
+            }}
+        >
+            {children}
+        </Typography>
+    );
+
+
+    const HeaderText = ({ children }) => (
+        <Typography
+            variant="h1"
+            sx={{
+                color: '#fffcf6',
+                fontSize: { xs: '4rem', md: '6rem' },
+                fontFamily: "var(--ff-cursive)",
+            }}
+        >
+            {children}
+        </Typography>
+    );
+
     return (
         <Box
             sx={{
                 position: 'relative',
                 height: { height },
                 backgroundImage: `url(${image})`,
+                backgroundColor: '#eab2bb',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 display: 'flex',
@@ -37,16 +66,11 @@ export default function HeaderImage({ header, image, height, children }) {
                     zIndex: 2
                 }}
             >
-                <Typography
-                    variant="h1"
-                    sx={{
-                        color: 'white',
-                        fontSize: { xs: '4rem', md: '6rem' },
-                        fontFamily: "var(--ff-cursive)",
-                    }}
-                >
-                    {header}
-                </Typography>
+
+                <NormalText>{preTitle}</NormalText>
+
+                <HeaderText>{header}</HeaderText>
+
                 {children}
             </Stack>
         </Box>

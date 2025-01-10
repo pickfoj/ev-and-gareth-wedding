@@ -8,7 +8,7 @@ export default function ParallaxBannerImage({ image }) {
                 layers={[
                     { image: image, speed: -15 }
                 ]}
-                style={{ height: '500px' }}
+                style={{ height: '700px' }}
             />
         </ParallaxProvider>
 

@@ -78,6 +78,7 @@ function App() {
             <ResponsiveAppBar {...props} />
             <Routes>
               <Route path='/' element={<Home />}></Route>
+              {/* <Route path='/schedule' element={<Schedule />}></Route> */}
               {/* <Route path='/area' element={<Area />}></Route>
               <Route path='/logistics' element={<Logistics />}></Route>
               <Route path='/accommodation' element={<Accommodation />}></Route>

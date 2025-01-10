@@ -1,11 +1,13 @@
 :root {
     --colour-black: #090A0F;
-    --colour-white: #fff;
-    --colour-pink: #F6A99D;
-    --colour-green: #A3B899;
-    --colour-blue: #94A3C4;
-    --ff-cursive: "Allura", cursive;
-    --ff: "Cormorant Garamond", serif;
+    --colour-white: #fffcf6;
+    --colour-pink: #eab2bb;
+    --colour-purple: #b78fd6;
+    --colour-green: #5eb090;
+    --colour-yellow: #eae164;
+    --colour-blue: #3c6ca8;
+    --ff-cursive: "Archivo Black", cursive;
+    --ff: "Open Sans";
     --h1: 6em var(--ff-cursive);
     --h1-mobile: 4em var(--ff-cursive);
     --h2: 3em var(--ff);
@@ -40,7 +42,7 @@
     --amplify-components-button-primary-border-color: var(--colour-black);
     --amplify-components-button-primary-color: var(--colour-black);
     height: 100vh;
-    background-color: #A3B899;
+    background-color: #5eb090;
 }
 
 h1 {

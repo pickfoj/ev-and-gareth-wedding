@@ -1,4 +1,4 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import SquareIcon from '@mui/icons-material/Square';
 
 export default function Invitation() {
@@ -47,7 +47,7 @@ export default function Invitation() {
             justifyContent="center"
             sx={{
                 textAlign: 'center',
-                backgroundColor: '#A3B899',
+                backgroundColor: '#5eb090',
                 padding: 10
             }}
         >

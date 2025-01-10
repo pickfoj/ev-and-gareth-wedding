@@ -6,7 +6,7 @@ export default function FaqsAccordion({ faqs }) {
         <Box sx={{
             maxWidth: { xs: '100%', md: '800px' },
             margin: '0 auto',
-            padding: 2
+            padding: 2,
         }}>
             {faqs.map((faq, index) => (
                 <>
@@ -15,7 +15,8 @@ export default function FaqsAccordion({ faqs }) {
                         elevation={0}
                         square
                         sx={{
-                            my: {xs: '20px', md: '50px'}
+                            my: {xs: '20px', md: '50px'},
+                            backgroundColor: '#3c6ca8'
                         }}
                     >
                         <AccordionSummary

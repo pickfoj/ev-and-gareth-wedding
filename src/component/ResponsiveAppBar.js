@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const pages = [
     { displayName: 'Home', path: "/" },
-    // { displayName: 'Area', path: "/area" },
+    // { displayName: 'Schedule', path: "/schedule" },
     // { displayName: 'Logistics', path: "/logistics" },
     // { displayName: 'Accommodation', path: "/accommodation" },
     // { displayName: 'FAQs', path: "/faqs" },
@@ -54,8 +54,8 @@ export default function ResponsiveAppBar() {
     return (
         <HideOnScroll>
             <AppBar sx={{
-                backgroundColor: scrolled ? 'white' : 'transparent',
-                color: scrolled ? 'black' : 'white',
+                backgroundColor: scrolled ? '#fffcf6' : 'transparent',
+                color: scrolled ? 'black' : '#fffcf6',
                 boxShadow: 'none',
                 transition: '0.5s'
             }}>
@@ -121,7 +121,7 @@ export default function ResponsiveAppBar() {
                                         borderRadius: 0,
                                         '&:hover': {
                                             borderBottom: '2px solid', // On hover, add a black border
-                                            borderColor: scrolled ? 'black' : 'white',
+                                            borderColor: scrolled ? 'black' : '#fffcf6',
                                             backgroundColor: 'transparent',
                                             borderRadius: 0,
                                         },
