@@ -1,9 +1,9 @@
 import './Home.css';
-import backgroundImage from '../img/hero1.jpeg'
-import formalImage from '../img/formal.jpeg'
-import hero2Image from '../img/hero2.jpeg'
-import tennisImage from '../img/tennis.jpeg'
-import bakingImage from '../img/baking.jpeg'
+import backgroundImage from '../img/hero1.jpg'
+import formalImage from '../img/formal.jpg'
+import hero2Image from '../img/hero2.jpg'
+import tennisImage from '../img/tennis.jpg'
+import bakingImage from '../img/baking.jpg'
 import HeaderImage from '../component/HeaderImage';
 import SquareIcon from '@mui/icons-material/Square';
 import { Stack, Typography } from '@mui/material';
