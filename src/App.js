@@ -5,6 +5,11 @@ import { Amplify } from 'aws-amplify';
 import { signIn } from 'aws-amplify/auth';
 import { I18n } from 'aws-amplify/utils';
 import Home from './pages/Home';
+import Schedule from './pages/Schedule';
+import GettingThere from './pages/GettingThere';
+import Menu from './pages/Menu';
+import Faqs from './pages/Faqs';
+import Rsvp from './pages/Rsvp';
 import { Route, Routes } from "react-router-dom"
 import Stack from '@mui/material/Stack';
 import ResponsiveAppBar from './component/ResponsiveAppBar';
@@ -78,11 +83,11 @@ function App() {
             <ResponsiveAppBar {...props} />
             <Routes>
               <Route path='/' element={<Home />}></Route>
-              {/* <Route path='/schedule' element={<Schedule />}></Route> */}
-              {/* <Route path='/area' element={<Area />}></Route>
-              <Route path='/logistics' element={<Logistics />}></Route>
-              <Route path='/accommodation' element={<Accommodation />}></Route>
-              <Route path='/faqs' element={<Faqs />}></Route> */}
+              <Route path='/schedule' element={<Schedule />}></Route>
+              <Route path='/getting-there' element={<GettingThere />}></Route>
+              <Route path='/menu' element={<Menu />}></Route>
+              <Route path='/faqs' element={<Faqs />}></Route>
+              <Route path='/rsvp' element={<Rsvp />}></Route>
             </Routes>
           </>
         )

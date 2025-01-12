@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 const pages = [
     { displayName: 'Home', path: "/" },
-    // { displayName: 'Schedule', path: "/schedule" },
-    // { displayName: 'Logistics', path: "/logistics" },
-    // { displayName: 'Accommodation', path: "/accommodation" },
-    // { displayName: 'FAQs', path: "/faqs" },
-    // { displayName: 'RSVP', path: "TODO" }
+    { displayName: 'Schedule', path: "/schedule" },
+    { displayName: 'Getting There', path: "/getting-there" },
+    { displayName: 'Food & Drinks', path: "/menu" },
+    { displayName: 'FAQs', path: "/faqs" },
+    { displayName: 'RSVP', path: "/rsvp" }
 ];
 
 
